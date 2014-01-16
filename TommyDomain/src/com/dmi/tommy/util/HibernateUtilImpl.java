@@ -34,5 +34,4 @@ public class HibernateUtilImpl implements HibernateUtil {
 	public SessionFactory getSessionFactory() {
         return sessionFactory;
     }
-
 }
