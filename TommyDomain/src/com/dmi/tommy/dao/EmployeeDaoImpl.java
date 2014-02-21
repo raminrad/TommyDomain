@@ -68,7 +68,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 					.list();
 		}
 		catch (Exception e) {
-			// TODO - do something with exception
+			logger.log(Level.SEVERE, 
+					"exception thrown while trying to find by Name for " + firstname + " " + lastname, e);
 		}
 		finally {
 			if (session.isOpen()) {
